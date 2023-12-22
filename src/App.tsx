@@ -2,6 +2,8 @@ import { useState } from "react";
 import logo from "./logo.svg";
 import poweredBy from "./powered-by-vitawind-dark.png";
 
+const VITE_ENV_SAMPLE = import.meta.env.VITE_ENV_SAMPLE;
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -24,6 +26,9 @@ function App() {
         </style>
         <p className="bg-gradient-to-r from-emerald-300 to-sky-300 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent">
           Vite + React + Typescript + Tailwindcss v3
+        </p>
+        <p className="bg-gradient-to-r from-emerald-300 to-sky-300 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent">
+          {VITE_ENV_SAMPLE}
         </p>
         <p className="mt-3">
           <button
